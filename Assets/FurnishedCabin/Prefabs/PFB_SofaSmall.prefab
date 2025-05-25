@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23000011676373920}
   - component: {fileID: 64000013687560146}
   - component: {fileID: 8147761516840701257}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_SofaSmall
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -220,7 +220,7 @@ GameObject:
   - component: {fileID: 114000011518356856}
   - component: {fileID: 65000010569510288}
   - component: {fileID: -9058745532679098175}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_TVStand
   m_TagString: Untagged
   m_Icon: {fileID: 0}

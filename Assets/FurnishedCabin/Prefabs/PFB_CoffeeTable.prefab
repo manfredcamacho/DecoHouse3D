@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 33000011953823264}
   - component: {fileID: 23000013161139956}
   - component: {fileID: 64000013227331626}
-  m_Layer: 0
+  - component: {fileID: -8177188843540025180}
+  m_Layer: 3
   m_Name: PFB_CoffeeTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -106,3 +107,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300002, guid: 87dbd671cf01c4a2092308da3db7c073, type: 3}
+--- !u!114 &-8177188843540025180
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010909621472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efdc3656f1f29e4da589559ac83f4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

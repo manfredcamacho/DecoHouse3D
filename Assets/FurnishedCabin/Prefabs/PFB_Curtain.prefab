@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23000010987733344}
   - component: {fileID: 64000011067311760}
   - component: {fileID: -1802141470873571195}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_Curtain
   m_TagString: Untagged
   m_Icon: {fileID: 0}

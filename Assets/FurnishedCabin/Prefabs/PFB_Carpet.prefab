@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23000010689214470}
   - component: {fileID: -5705277922131346486}
   - component: {fileID: -1905334064505028118}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_Carpet
   m_TagString: Untagged
   m_Icon: {fileID: 0}

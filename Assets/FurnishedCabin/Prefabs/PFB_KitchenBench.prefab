@@ -133,7 +133,7 @@ GameObject:
   - component: {fileID: 95000011848008184}
   - component: {fileID: 114000014034127314}
   - component: {fileID: -4720070308006967017}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_KitchenBench
   m_TagString: Untagged
   m_Icon: {fileID: 0}

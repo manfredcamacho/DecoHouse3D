@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 23000011633855202}
   - component: {fileID: 64000010300213678}
   - component: {fileID: -5338921684131360812}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PFB_DiningTable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
