@@ -43,8 +43,21 @@ public class PlayerLook : MonoBehaviour
         
     }
 
+    private void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+        m_cursorIsLocked = false;
+    }
+
     private void Update()
     {
+        if (UIManager.Instance.IsInspectPanelOpen)
+        {
+            UnlockCursor();
+            return;
+        }
+        LockCursor();
         CameraRotation();
     }
 

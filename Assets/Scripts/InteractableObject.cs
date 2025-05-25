@@ -4,20 +4,15 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    [SerializeField] private string customName;
 
     public void Interact() {
-        Debug.Log("Interactuando con " + gameObject.name);
+        UIManager.Instance.ShowInteractionCanvas(this);
+    }
+
+    public string getCustomName()
+    {
+        return customName;
     }
 
 }

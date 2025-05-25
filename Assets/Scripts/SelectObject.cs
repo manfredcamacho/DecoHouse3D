@@ -17,6 +17,12 @@ public class SelectObject : MonoBehaviour
 
     void Update()
     {
+
+        if (UIManager.Instance.IsInspectPanelOpen)
+        {
+            return;
+        }
+
         if (Input.GetMouseButtonDown(0))
         {
             float timeSinceLastClick = Time.time - lastClickTime;
@@ -42,11 +48,12 @@ public class SelectObject : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100f, interactableLayer))
         {
-            InteractableObject objet = hit.collider.GetComponent<InteractableObject>();
+            InteractableObject obj = hit.collider.GetComponent<InteractableObject>();
 
-            if (objet != null)
+            if (obj != null)
             {
-                objet.Interact();
+                GetComponent<SmoothMover>().MoveToTarget(obj.gameObject.transform);
+                obj.Interact();
             }
 
         }

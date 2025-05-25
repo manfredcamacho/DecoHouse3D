@@ -20,6 +20,10 @@ public class PlayerMove : MonoBehaviour
 
     private void Update()
     {
+        if (UIManager.Instance.IsInspectPanelOpen)
+        {
+            return;
+        }
         PlayerMovement();
     }
 

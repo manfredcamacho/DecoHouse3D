@@ -312,6 +312,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6efdc3656f1f29e4da589559ac83f4ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  customName: Tv Stand
 --- !u!1 &1000010748514882
 GameObject:
   m_ObjectHideFlags: 0
