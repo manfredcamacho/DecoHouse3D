@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000010533500006}
   - component: {fileID: 23000011676373920}
   - component: {fileID: 64000013687560146}
+  - component: {fileID: 8147761516840701257}
   m_Layer: 0
   m_Name: PFB_SofaSmall
   m_TagString: Untagged
@@ -106,3 +107,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e760d65fe79664bb3b74548e3f010844, type: 3}
+--- !u!114 &8147761516840701257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000012601862206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efdc3656f1f29e4da589559ac83f4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

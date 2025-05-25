@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 33000014237836970}
   - component: {fileID: 23000013839165794}
   - component: {fileID: 64000014188241414}
+  - component: {fileID: -7202625102979783800}
   m_Layer: 0
   m_Name: PFB_CurtainSmall
   m_TagString: Untagged
@@ -106,3 +107,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: b906ed5111f9c47ba80d9346cac7401f, type: 3}
+--- !u!114 &-7202625102979783800
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010440600354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efdc3656f1f29e4da589559ac83f4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

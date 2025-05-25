@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 95000014167001920}
   - component: {fileID: 114000011518356856}
   - component: {fileID: 65000010569510288}
+  - component: {fileID: -9058745532679098175}
   m_Layer: 0
   m_Name: PFB_TVStand
   m_TagString: Untagged
@@ -299,6 +300,18 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.96, y: 0.55, z: 0.81}
   m_Center: {x: 0, y: 0.33, z: 0.54}
+--- !u!114 &-9058745532679098175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1000010719739470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6efdc3656f1f29e4da589559ac83f4ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1000010748514882
 GameObject:
   m_ObjectHideFlags: 0
