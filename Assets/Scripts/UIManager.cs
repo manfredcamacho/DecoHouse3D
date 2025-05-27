@@ -9,7 +9,7 @@ public class UIManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private Canvas UICanvas;
     [SerializeField] private Canvas HUDCanvas;
-    [SerializeField] private TMP_Text title;
+    [SerializeField] private TMP_Text UITitle;
 
     public bool IsInspectPanelOpen { get; private set; } = false;
 
@@ -23,7 +23,7 @@ public class UIManager : MonoBehaviour
     {
         UICanvas.gameObject.SetActive(true);
         IsInspectPanelOpen = true;
-        title.text = target.getCustomName();
+        UITitle.text = target.getCustomName();
     }
     public void CloseInspectPanel()
     {
@@ -32,5 +32,24 @@ public class UIManager : MonoBehaviour
         player[0].gameObject.GetComponent<SmoothMover>().ReturnToOriginalPosition();
         IsInspectPanelOpen = false;
         UICanvas.gameObject.SetActive(false);
+    }
+
+    private void showMaterialColorPicker(InteractableObject target)
+    {
+        //if (target.editableMaterials != null && currentObject.editableMaterials.Count > 0)
+        //{
+
+        //    Color currentColor = currentObject.editableMaterials[0].color;
+
+        //    rSlider.SetValueWithoutNotify(currentColor.r);
+        //    gSlider.SetValueWithoutNotify(currentColor.g);
+        //    bSlider.SetValueWithoutNotify(currentColor.b);
+
+        //    //MOSTRAR LOS VALORES DEL RGB EN TEXTO EN PANTALLA (0-255)
+        //    rValueText.text = Mathf.RoundToInt(currentColor.r * 255).ToString();
+        //    gValueText.text = Mathf.RoundToInt(currentColor.g * 255).ToString();
+        //    bValueText.text = Mathf.RoundToInt(currentColor.b * 255).ToString();
+
+        //}
     }
 }

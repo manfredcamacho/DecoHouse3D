@@ -10,14 +10,11 @@ public class SmoothMover : MonoBehaviour
     private Quaternion originalRotation;
     private Coroutine currentRoutine;
 
-    private void Start()
+    public void MoveToTarget(Transform target)
     {
         originalPosition = transform.position;
         originalRotation = transform.rotation;
-    }
 
-    public void MoveToTarget(Transform target)
-    {
         if (currentRoutine != null) StopCoroutine(currentRoutine);
 
         // Calculamos la posición frente al objeto

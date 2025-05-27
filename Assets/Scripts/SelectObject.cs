@@ -9,6 +9,7 @@ public class SelectObject : MonoBehaviour
     private float lastClickTime = 0;
     private const float DOUBLE_CLICK_TIME_THRESHOLD = 0.2f;
     private LayerMask interactableLayer;
+    [SerializeField] private float reachDistance = 50f;
 
     private void Awake()
     {
@@ -46,7 +47,7 @@ public class SelectObject : MonoBehaviour
         Ray ray = Camera.main.ScreenPointToRay(mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 100f, interactableLayer))
+        if (Physics.Raycast(ray, out hit, reachDistance, interactableLayer))
         {
             InteractableObject obj = hit.collider.GetComponent<InteractableObject>();
 
