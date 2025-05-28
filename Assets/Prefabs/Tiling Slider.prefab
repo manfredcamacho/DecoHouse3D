@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "255\u200B"
+  m_text: "0\u200B"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: R
+  m_text: X
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -261,8 +261,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4280558628
+  m_fontColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -580,7 +580,7 @@ MonoBehaviour:
   m_CaretColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_CustomCaretColor: 0
   m_SelectionColor: {r: 0.65882355, g: 0.80784315, b: 1, a: 0.7529412}
-  m_Text: 255
+  m_Text: 0
   m_CaretBlinkRate: 0.63
   m_CaretWidth: 1
   m_ReadOnly: 0
@@ -609,7 +609,7 @@ MonoBehaviour:
   m_MinHeight: -1
   m_PreferredWidth: -1
   m_PreferredHeight: -1
-  m_FlexibleWidth: 1
+  m_FlexibleWidth: 3
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
 --- !u!1 &3761136064182792992
@@ -771,8 +771,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 6342249558003942799}
   m_HandleRect: {fileID: 5668210344062756722}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 255
+  m_MinValue: -20
+  m_MaxValue: 20
   m_WholeNumbers: 1
   m_Value: 0
   m_OnValueChanged:
@@ -1038,9 +1038,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4345855719057154171}
   - component: {fileID: 4605339358501438671}
-  - component: {fileID: 6706478574317659066}
+  - component: {fileID: 3791789021600254852}
   m_Layer: 5
-  m_Name: Slider
+  m_Name: Tiling Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1094,7 +1094,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 1
   m_ChildScaleHeight: 1
   m_ReverseArrangement: 0
---- !u!114 &6706478574317659066
+--- !u!114 &3791789021600254852
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1103,14 +1103,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 6695918754851909924}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f43bc63a08e43c4fb48145b1f5524e4, type: 3}
+  m_Script: {fileID: 11500000, guid: bc36975550988f04ca3bf6e00903cae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _slider: {fileID: 7920965297236683598}
   _sliderInput: {fileID: 8471773124135180270}
-  _fillImage: {fileID: 278811682223647798}
-  _handleImage: {fileID: 5444242658921762414}
-  _sliderColor: {r: 1, g: 1, b: 1, a: 1}
+  _textMeshPro: {fileID: 5485319597411671318}
+  _text: x
 --- !u!1 &8868998623443272767
 GameObject:
   m_ObjectHideFlags: 0
