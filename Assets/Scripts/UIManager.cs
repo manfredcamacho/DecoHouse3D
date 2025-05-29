@@ -1,6 +1,7 @@
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
@@ -10,6 +11,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Canvas UICanvas;
     [SerializeField] private Canvas HUDCanvas;
     [SerializeField] private TMP_Text UITitle;
+    [SerializeField] private Button texturesButton;
 
     public bool IsInspectPanelOpen { get; private set; } = false;
 
@@ -21,9 +23,21 @@ public class UIManager : MonoBehaviour
 
     public void ShowInteractionCanvas(InteractableObject target)
     {
-        UICanvas.gameObject.SetActive(true);
         IsInspectPanelOpen = true;
         UITitle.text = target.getCustomName();
+
+        // Disable texture button if the object doesn't supports textures
+        if (target.scriptableObject.isTextured && target.scriptableObject.texturedElements.Count > 0)
+        {
+            texturesButton.interactable = true;
+        }
+        else
+        {
+            texturesButton.interactable = false;
+        }
+
+
+        UICanvas.gameObject.SetActive(true);
     }
     public void CloseInspectPanel()
     {
@@ -51,5 +65,10 @@ public class UIManager : MonoBehaviour
         //    bValueText.text = Mathf.RoundToInt(currentColor.b * 255).ToString();
 
         //}
+    }
+
+    private void showTexturePickerPanel(InteractableObject target)
+    {
+
     }
 }

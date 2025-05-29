@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableObject : MonoBehaviour
 {
-    [SerializeField] private string customName;
+    public HouseScriptableObject scriptableObject;
 
     public void Interact() {
         UIManager.Instance.ShowInteractionCanvas(this);
@@ -12,7 +12,7 @@ public class InteractableObject : MonoBehaviour
 
     public string getCustomName()
     {
-        return customName;
+        return scriptableObject.customName;
     }
 
 }
