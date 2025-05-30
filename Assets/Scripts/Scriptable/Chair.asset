@@ -14,7 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   customName: Chair
   customMaterialsToEdit: []
-  isTextured: 0
-  texturedMaterial: {fileID: 0}
-  texturedElements: []
+  isTextured: 1
+  texturedMaterial: {fileID: 2100000, guid: ab09b807465f7f7489d941868660cba5, type: 2}
+  texturedElements:
+  - mainTexture: {fileID: 2800000, guid: 24e5857cbf19d1148b57b7ca45a0d918, type: 3}
+    normalMap: {fileID: 2800000, guid: 9f28cf79cb0917b4a92f6f2fb2d0dbd4, type: 3}
+  - mainTexture: {fileID: 2800000, guid: 910f252e96c90814c9c83d59087044c5, type: 3}
+    normalMap: {fileID: 2800000, guid: 0d9a1c0d22cfe9e42832f6bffe558635, type: 3}
   defaultTiling: {x: 1, y: 1}

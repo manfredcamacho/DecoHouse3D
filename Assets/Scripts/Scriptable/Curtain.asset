@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: Curtain
   m_EditorClassIdentifier: 
   customName: 
-  customMaterialsToEdit: []
+  customMaterialsToEdit:
+  - {fileID: 2100000, guid: 1e05ea7872a1e394ba771e3b4dd104e4, type: 2}
   isTextured: 0
   texturedMaterial: {fileID: 0}
   texturedElements: []
