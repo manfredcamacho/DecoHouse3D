@@ -2,7 +2,7 @@
 - Project name: DecoHouse3D
 - Unity version: Unity 2022.3.42f1
 - Active game object:
-  - Name: Textures Panel
+  - Name: PFB_Sofa
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Interactable
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
