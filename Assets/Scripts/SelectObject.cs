@@ -27,7 +27,9 @@ public class SelectObject : MonoBehaviour
             return;
         }
 
-        outlineInteractuableObject(Input.mousePosition);
+
+        // TODO FIX ON MOBILE, 
+        //outlineInteractuableObject(Input.mousePosition);
 
         if (Input.GetMouseButtonDown(0))
         {
