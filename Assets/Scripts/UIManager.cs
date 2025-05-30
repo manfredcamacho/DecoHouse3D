@@ -62,6 +62,8 @@ public class UIManager : MonoBehaviour
         SoundManager.instance.PlaySound(SoundType.BUTTON_CLICK);
         currentObject = target;
 
+        HUDCanvas.enabled = false;
+
         var outline = currentObject.GetComponent<Outline>();
         if (outline != null) { outline.enabled = false; }
 
@@ -99,13 +101,7 @@ public class UIManager : MonoBehaviour
         {
             Color currentColor = currentObject.editableMaterials[0].color;
 
-            rSlider.SetValueWithoutNotify(currentColor.r);
-            gSlider.SetValueWithoutNotify(currentColor.g);
-            bSlider.SetValueWithoutNotify(currentColor.b);
-
-            rInput.text = Mathf.RoundToInt(currentColor.r * 255).ToString();
-            gInput.text = Mathf.RoundToInt(currentColor.g * 255).ToString();
-            bInput.text = Mathf.RoundToInt(currentColor.b * 255).ToString();
+            SetColorUI(currentColor);
         }
 
 
@@ -115,6 +111,8 @@ public class UIManager : MonoBehaviour
     {
         //GameObject[] player = GameObject.FindGameObjectsWithTag("Player");
         //player[0].gameObject.GetComponent<SmoothMover>().ReturnToOriginalPosition();
+
+        HUDCanvas.enabled = true;
 
         SoundManager.instance.PlaySound(SoundType.BUTTON_CLOSE);
         IsInspectPanelOpen = false;
@@ -168,11 +166,30 @@ public class UIManager : MonoBehaviour
 
         Color newColor = new Color(rSlider.value, gSlider.value, bSlider.value);
 
-        currentObject.SetColor(newColor); // Let the object apply the color
+        setColorTarget(newColor); // Let the object apply the color
 
         // Update RGB text values (0-255)
         rInput.text = Mathf.RoundToInt(newColor.r * 255).ToString();
         gInput.text = Mathf.RoundToInt(newColor.g * 255).ToString();
         bInput.text = Mathf.RoundToInt(newColor.b * 255).ToString();
+    }
+
+    public void SetColorUI(Color newColor)
+    {
+        rSlider.SetValueWithoutNotify(newColor.r);
+        gSlider.SetValueWithoutNotify(newColor.g);
+        bSlider.SetValueWithoutNotify(newColor.b);
+
+        rInput.text = Mathf.RoundToInt(newColor.r * 255).ToString();
+        gInput.text = Mathf.RoundToInt(newColor.g * 255).ToString();
+        bInput.text = Mathf.RoundToInt(newColor.b * 255).ToString();
+    }
+
+    public void setColorTarget(Color newColor)
+    {
+        if (currentObject != null)
+        {
+            currentObject.SetColor(newColor);
+        }
     }
 }
