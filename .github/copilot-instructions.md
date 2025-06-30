@@ -2,7 +2,7 @@
 - Project name: DecoHouse3D
 - Unity version: Unity 2022.3.42f1
 - Active game object:
-  - Name: Color Sample
+  - Name: Fireplace2
   - Tag: Untagged
-  - Layer: UI
+  - Layer: Default
 <!-- UNITY CODE ASSIST INSTRUCTIONS END -->
